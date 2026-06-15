@@ -1,10 +1,23 @@
+// src/pages/Certificates.jsx
 import CertificateCard from "../components/CertificateCard";
 
 export default function Certificates() {
   const certificates = [
-    { title: "80G Registration", issuer: "Income Tax Department" },
-    { title: "12A Registration", issuer: "Income Tax Department" },
-    { title: "NGO Darpan", issuer: "NITI Aayog, Govt. of India" },
+    { 
+      title: "80G Registration", 
+      issuer: "Income Tax Department", 
+      image: "/certificate1.png" 
+    },
+    { 
+      title: "12A Registration", 
+      issuer: "Income Tax Department", 
+      image: "/certificate2.png" 
+    },
+    { 
+      title: "NGO Darpan", 
+      issuer: "NITI Aayog, Govt. of India", 
+      image: "/certificate3.png" 
+    },
   ];
 
   return (
@@ -21,7 +34,8 @@ export default function Certificates() {
           <CertificateCard 
             key={index} 
             title={cert.title} 
-            issuer={cert.issuer} 
+            issuer={cert.issuer}
+            image={cert.image} // Passing the image path here
           />
         ))}
       </div>
