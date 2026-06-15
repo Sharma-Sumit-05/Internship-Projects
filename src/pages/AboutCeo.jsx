@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
  import { FaLinkedin, FaInstagram, FaArrowLeft } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 export default function AboutCeo() {
+
+useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 transition-colors duration-300 py-16 px-6">
       <div className="max-w-4xl mx-auto">

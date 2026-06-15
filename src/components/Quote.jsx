@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export function Quote() {
   return (
     <section className="py-20 px-6 bg-white dark:bg-slate-950 transition-colors duration-300">
@@ -37,9 +39,12 @@ export function Quote() {
             </div>
           </div>
 
-          <button className="mt-8 px-8 py-3 border-2 border-[#597F30] text-[#597F30] hover:bg-[#597F30] hover:text-white rounded-full font-bold transition-all duration-300">
-            About Me
-          </button>
+          <Link 
+  to="/about-ceo" 
+  className="mt-8 px-8 py-3 border-2 border-[#597F30] text-[#597F30] hover:bg-[#597F30] hover:text-white rounded-full font-bold transition-all duration-300"
+>
+  About Me
+</Link>
         </div>
 
       </div>
