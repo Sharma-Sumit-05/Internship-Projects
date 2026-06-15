@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import Certificates from "./pages/Certificates";
 import Recognition from "./pages/Recognition";
 import Donate from "./pages/Donate";
+import AboutCeo from "./pages/AboutCeo";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/recognition" element={<Recognition />} />
             <Route path="/donate" element={<Donate />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/about-ceo" element={<AboutCeo />} />
           </Routes>
         </Layout>
       </BrowserRouter>

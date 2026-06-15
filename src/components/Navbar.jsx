@@ -14,7 +14,6 @@ const Navbar = () => {
         <nav className={`h-16 flex items-center justify-between px-6 rounded-full shadow-lg backdrop-blur-xl border transition-all duration-300
           ${isDark ? "bg-black/80 border-gray-800" : "bg-white/80 border-white/50"}`}>
           
-          {/* Logo */}
           <Link to="/" className={`font-black text-xl ${isDark ? "text-white" : "text-black"}`}>
             <span className="text-[#597F30]">Naye</span>Pankh
           </Link>

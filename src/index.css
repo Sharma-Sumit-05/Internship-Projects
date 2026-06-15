@@ -8,3 +8,13 @@
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* src/index.css */
+@keyframes marquee-animation {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee-animation 25s linear infinite;
+}
