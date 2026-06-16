@@ -9,11 +9,14 @@ import Certificates from "./pages/Certificates";
 import Recognition from "./pages/Recognition";
 import Donate from "./pages/Donate";
 import AboutCeo from "./pages/AboutCeo";
+import RazorpayPage from "./pages/RazorpayPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <ThemeProvider> 
       <BrowserRouter>
+      <ScrollToTop />
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -23,6 +26,7 @@ function App() {
             <Route path="/donate" element={<Donate />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/about-ceo" element={<AboutCeo />} />
+             <Route path="/razorpay" element={<RazorpayPage />} />
           </Routes>
         </Layout>
       </BrowserRouter>

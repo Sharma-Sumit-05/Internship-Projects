@@ -2,48 +2,57 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 text-white py-16 mt-20">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+    <footer className="bg-slate-950 text-slate-300 pt-20 pb-10 border-t border-slate-800">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
         
         {/* Brand Section */}
         <div className="col-span-1 md:col-span-2">
-          <Link to="/" className="text-2xl font-black mb-4 block">
+          <Link to="/" className="text-3xl font-black mb-6 block tracking-tight">
             <span className="text-[#E1F1D0]">Naye</span>Pankh
           </Link>
-          <p className="text-slate-400 max-w-sm leading-relaxed">
-            Empowering the underprivileged through education, healthcare, and welfare initiatives. 
-            Together, we can spread wings of hope.
+          <p className="text-slate-400 max-w-sm leading-relaxed mb-6">
+            Dedicated to spreading wings of hope through education, healthcare, and welfare. 
+            Join us in our journey to transform lives and create a more equitable future.
           </p>
+          <div className="flex gap-4">
+            {/* Add Social Icons here */}
+            <span className="text-xs uppercase tracking-widest text-[#E1F1D0]/50 font-bold">Connect With Us</span>
+          </div>
         </div>
 
         {/* Quick Links */}
         <div>
-          <h4 className="font-bold text-lg mb-6 text-[#E1F1D0]">Navigate</h4>
-          <ul className="space-y-3 text-slate-400">
-            <li><Link to="/about" className="hover:text-white transition">About Us</Link></li>
-            <li><Link to="/certificates" className="hover:text-white transition">Certificates</Link></li>
-            <li><Link to="/recognition" className="hover:text-white transition">Recognition</Link></li>
-            <li><Link to="/donate" className="hover:text-white transition">Donate Now</Link></li>
+          <h4 className="font-bold text-lg mb-6 text-white">Navigate</h4>
+          <ul className="space-y-4">
+            <li><Link to="/about" className="hover:text-[#E1F1D0] transition-colors">About Us</Link></li>
+            <li><Link to="/about-ceo" className="hover:text-[#E1F1D0] transition-colors">Meet the Founder</Link></li>
+            <li><Link to="/certificates" className="hover:text-[#E1F1D0] transition-colors">Our Certificates</Link></li>
+            <li><Link to="/recognition" className="hover:text-[#E1F1D0] transition-colors">Media & Recognition</Link></li>
           </ul>
         </div>
 
-        {/* Legal/Contact */}
+        {/* Contact/Support */}
         <div>
-          <h4 className="font-bold text-lg mb-6 text-[#E1F1D0]">Legal & Support</h4>
-          <ul className="space-y-3 text-slate-400">
-            <li>80G & 12A Registered</li>
+          <h4 className="font-bold text-lg mb-6 text-white">Support</h4>
+          <ul className="space-y-4">
+            <li className="text-[#E1F1D0] font-medium">80G & 12A Registered</li>
             <li>New Delhi, India</li>
-            <li>info@nayepankh.org</li>
+            <li className="hover:text-white transition-colors cursor-pointer">info@nayepankh.org</li>
+            <li>
+              <Link to="/donate" className="inline-block mt-2 bg-[#597F30] text-white px-6 py-2 rounded-full font-bold text-sm hover:bg-[#4a6d28] transition-all">
+                Donate Now
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
 
       {/* Bottom Bar */}
-      <div className="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+      <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
         <p>© {new Date().getFullYear()} NayePankh Foundation. All rights reserved.</p>
-        <div className="flex gap-6">
-          <a href="#" className="hover:text-white">Privacy Policy</a>
-          <a href="#" className="hover:text-white">Terms of Service</a>
+        <div className="flex gap-8">
+          <a href="#" className="hover:text-[#E1F1D0]">Privacy Policy</a>
+          <a href="#" className="hover:text-[#E1F1D0]">Terms of Service</a>
         </div>
       </div>
     </footer>

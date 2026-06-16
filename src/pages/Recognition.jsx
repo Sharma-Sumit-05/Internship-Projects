@@ -1,39 +1,55 @@
 export default function Recognition() {
-  // You can easily add more items here later
-  const mediaItems = [1, 2, 3, 4, 5]; 
+  const featuredMedia = {
+    title: "Main Featured Headline",
+    image: "/main.png"
+  };
+
+  const mediaGallery = [
+    { id: 1, title: "News Feature 1", image: "/news1.png" },
+    { id: 2, title: "News Feature 2", image: "/news2.png" },
+    { id: 3, title: "News Feature 3", image: "/news3.png" },
+    { id: 4, title: "News Feature 4", image: "/news4.png" },
+    { id: 5, title: "News Feature 5", image: "/news5.png" },
+    { id: 6, title: "News Feature 6", image: "/news6.png" },
+  ];
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-24">
-      <div className="mb-12">
-        <h1 className="text-4xl font-black text-slate-900 mb-4">Recognition & Media</h1>
-        <p className="text-lg text-slate-600 max-w-xl">
+    <div className="max-w-screen mx-auto px-6 py-24 bg-black">
+      {/* Header */}
+      <div className="mb-16 text-center md:text-left">
+        <h1 className="text-5xl font-black text-white mb-6">Recognition & Media</h1>
+        <p className="text-xl text-white max-w-2xl">
           Proud moments and media highlights of the NayePankh journey.
         </p>
       </div>
 
-      {/* Featured Main Image Section 
-      
-      <img 
-  src="/featured.jpg" 
-  alt="Featured Recognition" 
-  className="w-full h-96 object-cover rounded-3xl shadow-lg"
-/>
-      */}
-      <div className="mb-12">
-        <div className="w-full h-96 bg-slate-100 rounded-3xl flex items-center justify-center border-2 border-dashed border-slate-300">
-          <span className="text-slate-400 font-medium">Main Featured Image</span>
+      {/* Main Featured Section */}
+      <div className="mb-20">
+        <div className="relative group  rounded-2xl overflow-hidden shadow-2xl">
+          <img 
+            src={featuredMedia.image} 
+            alt="Featured" 
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+          />
+          <div className="absolute bottom-0 left-0 p-8 bg-gradient-to-t from-black/80 to-transparent w-full">
+            <h2 className="text-white text-3xl font-bold">{featuredMedia.title}</h2>
+          </div>
         </div>
       </div>
 
-      {/* Grid Layout for other media */}
+      {/* Grid Layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {mediaItems.map((item) => (
-          <div key={item} className="bg-white p-4 rounded-3xl border border-slate-100 shadow-sm hover:shadow-lg transition-all">
-            <div className="h-64 bg-slate-100 rounded-2xl flex items-center justify-center border-2 border-dashed border-slate-300">
-              <span className="text-slate-400 font-medium">Media Clipping {item}</span>
+        {mediaGallery.map((item) => (
+          <div key={item.id} className="bg-black rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group overflow-hidden">
+            <div className=" overflow-hidden bg-slate-100">
+              <img 
+                src={item.image} 
+                alt={item.title} 
+                className=" object-cover group-hover:scale-110 transition-transform duration-500"
+              />
             </div>
-            <div className="p-2 mt-4">
-              <h3 className="font-bold text-slate-900">News Feature {item}</h3>
+            <div className="p-6">
+              <h3 className="font-bold text-lg text-white">{item.title}</h3>
             </div>
           </div>
         ))}
