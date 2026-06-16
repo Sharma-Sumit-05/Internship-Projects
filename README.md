@@ -16,7 +16,7 @@ A modern, responsive platform dedicated to spreading wings of hope through educa
 
 ## 📦 Getting Started
 1. **Clone the repository:**
-   `git clone https://github.com/Sharma-Sumit-05/nayepankh.git`
+   `git clone https://github.com/Sharma-Sumit-05/Internship-project.git`
 2. **Install dependencies:**
    `npm install`
 3. **Run the development server:**
