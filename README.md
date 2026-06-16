@@ -1,21 +1,26 @@
-<<<<<<< HEAD
-# React + Vite
+# NayePankh Foundation Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive platform dedicated to spreading wings of hope through education, healthcare, and welfare. Built with React and Tailwind CSS.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- **Responsive Design:** Fully optimized for mobile, tablet, and desktop.
+- **Modern UI:** Clean interface with glassmorphism effects and smooth transitions.
+- **Interactive:** Integrated donation flow with Razorpay.
+- **Content-Rich:** Features media recognition, certificate galleries, and founder profiles.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠 Tech Stack
+- **Frontend:** React.js, React Router
+- **Styling:** Tailwind CSS v4
+- **Icons:** Lucide React
+- **Deployment:** [Insert your deployment link here, e.g., Vercel/Netlify]
 
-## React Compiler
+## 📦 Getting Started
+1. **Clone the repository:**
+   `git clone https://github.com/Sharma-Sumit-05/nayepankh.git`
+2. **Install dependencies:**
+   `npm install`
+3. **Run the development server:**
+   `npm run dev`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Internship-Projects
-Internship projects 
->>>>>>> 54159bf6751c75fbe58885b6910f8048d3d36cd2
+## 🤝 Contribution
+Contributions are welcome! Please feel free to open an issue or submit a pull request.
