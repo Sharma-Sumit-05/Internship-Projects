@@ -4,12 +4,12 @@ const AboutPage = () => {
   return (
     <div className="w-full bg-slate-50 dark:bg-black transition-colors duration-300">
       
-      {/* 1st Section: Hero with welcome.png */}
+  
       <section className="relative h-[80vh] w-full flex items-center justify-center text-white overflow-hidden">
-        {/* Dark overlay for text readability */}
+    
         <div className="absolute inset-0 bg-black/50 z-10" />
         
-        {/* The Welcome background image */}
+   
         <img 
           src="/welcome.png" 
           alt="Welcome" 
@@ -26,7 +26,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* 2nd Section: Journey (Standard Background) */}
+
       <section className="py-24 px-6 bg-white dark:bg-black">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-sm font-bold text-[#597F30] tracking-widest uppercase mb-4">Our Journey</h2>
@@ -42,13 +42,12 @@ const AboutPage = () => {
             <img 
               src="/aboutus.png" 
               alt="Our Foundation Journey" 
-              className="rounded-3xl shadow-xl w-full h-[400px] object-cover hover:scale-[1.01] transition-transform duration-500"
+              className="rounded-3xl shadow-xl w-full h-120 object-cover hover:scale-[1.01] transition-transform duration-500"
             />
           </div>
         </div>
       </section>
 
-      {/* 3rd Section: What is NayePankh */}
       <section className="py-24 px-6 bg-slate-50 dark:bg-slate-900">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>

@@ -1,6 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// Change your import in App.jsx to:
-import { ThemeProvider } from "./components/context/ThemeContext";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -14,7 +12,6 @@ import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <ThemeProvider> 
       <BrowserRouter>
       <ScrollToTop />
         <Layout>
@@ -30,7 +27,6 @@ function App() {
           </Routes>
         </Layout>
       </BrowserRouter>
-    </ThemeProvider>
   );
 }
 

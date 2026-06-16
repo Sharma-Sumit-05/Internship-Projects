@@ -1,4 +1,4 @@
-// src/pages/Certificates.jsx
+
 import CertificateCard from "../components/CertificateCard";
 
 export default function Certificates() {
@@ -23,8 +23,8 @@ export default function Certificates() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-24">
       <div className="mb-12">
-        <h1 className="text-4xl font-black text-slate-900 mb-4">Our Certificates</h1>
-        <p className="text-lg text-slate-600 max-w-xl">
+        <h1 className="text-4xl font-black text-white mb-4">Our Certificates</h1>
+        <p className="text-lg text-white max-w-xl">
           NayePankh operates with complete transparency. Here are our official government registrations and certifications.
         </p>
       </div>
@@ -35,7 +35,7 @@ export default function Certificates() {
             key={index} 
             title={cert.title} 
             issuer={cert.issuer}
-            image={cert.image} // Passing the image path here
+            image={cert.image}
           />
         ))}
       </div>

@@ -3,7 +3,6 @@ export function JoinTeam() {
     <section className="w-full bg-black py-24 px-6 md:px-0">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         
-        {/* Header Section */}
         <div className="text-center mb-16 px-4">
           <h2 className="text-sm font-bold text-[#597F30] tracking-[0.2em] uppercase mb-4">
             Be the Change
@@ -18,16 +17,13 @@ export function JoinTeam() {
           </p>
         </div>
 
-        {/* Join Button */}
         <div className="flex justify-center mb-24">
           <button className="group relative bg-[#597F30] text-white px-12 py-5 rounded-full font-bold text-lg transition-all duration-300 hover:bg-[#4a6d28] hover:scale-105">
             <span className="relative z-10">JOIN US NOW</span>
-            {/* Subtle glow effect */}
             <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
           </button>
         </div>
 
-        {/* Full-Width Image Container */}
         <div className="w-full h-[60vh] md:h-[70vh] rounded-2xl overflow-hidden shadow-2xl relative group">
           <div className="absolute inset-0 bg-black/30 z-10 transition-opacity group-hover:opacity-0" />
           <img 

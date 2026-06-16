@@ -2,12 +2,13 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-950 text-slate-300 pt-20 pb-10 border-t border-slate-800">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+
+    <footer className="bg-slate-950 text-slate-300 pt-20 pb-10 border-t border-slate-800 dark:border-slate-800">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 mb-16">
         
-        {/* Brand Section */}
+
         <div className="col-span-1 md:col-span-2">
-          <Link to="/" className="text-3xl font-black mb-6 block tracking-tight">
+          <Link to="/" className="text-3xl font-black mb-6 block tracking-tight text-white">
             <span className="text-[#E1F1D0]">Naye</span>Pankh
           </Link>
           <p className="text-slate-400 max-w-sm leading-relaxed mb-6">
@@ -15,12 +16,10 @@ const Footer = () => {
             Join us in our journey to transform lives and create a more equitable future.
           </p>
           <div className="flex gap-4">
-            {/* Add Social Icons here */}
             <span className="text-xs uppercase tracking-widest text-[#E1F1D0]/50 font-bold">Connect With Us</span>
           </div>
         </div>
 
-        {/* Quick Links */}
         <div>
           <h4 className="font-bold text-lg mb-6 text-white">Navigate</h4>
           <ul className="space-y-4">
@@ -31,7 +30,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact/Support */}
         <div>
           <h4 className="font-bold text-lg mb-6 text-white">Support</h4>
           <ul className="space-y-4">
@@ -47,12 +45,11 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
         <p>© {new Date().getFullYear()} NayePankh Foundation. All rights reserved.</p>
         <div className="flex gap-8">
-          <a href="#" className="hover:text-[#E1F1D0]">Privacy Policy</a>
-          <a href="#" className="hover:text-[#E1F1D0]">Terms of Service</a>
+          <a href="#" className="hover:text-[#E1F1D0] transition-colors">Privacy Policy</a>
+          <a href="#" className="hover:text-[#E1F1D0] transition-colors">Terms of Service</a>
         </div>
       </div>
     </footer>

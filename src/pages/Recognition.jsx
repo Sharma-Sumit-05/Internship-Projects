@@ -23,7 +23,6 @@ export default function Recognition() {
         </p>
       </div>
 
-      {/* Main Featured Section */}
       <div className="mb-20">
         <div className="relative group  rounded-2xl overflow-hidden shadow-2xl">
           <img 
